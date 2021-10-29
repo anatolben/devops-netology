@@ -3,6 +3,8 @@ for DEVSYS-PDC-2
   
 added this line  
   
+added line for '#3 branchs'  
+  
 ## Правила файла [.gitignore](https://github.com/anatolben/devops-netology/blob/main/terraform/.gitignore) каталога terraform
   
 <pre><code>**/.terraform/*</code></pre>  
