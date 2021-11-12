@@ -4,8 +4,8 @@
 
 1. Установите средство автоматизации [Hashicorp Vagrant](https://www.vagrantup.com/).
 
-[screenshot #1](https://i.imgur.com/zGiCKDT.png)
-![screenshot #1](https://i.imgur.com/zGiCKDT.png)
+[screenshot #1](https://i.imgur.com/zGiCKDT.png)  
+![screenshot #1](https://i.imgur.com/zGiCKDT.png)  
 
 1. В вашем основном окружении подготовьте удобный для дальнейшей работы терминал. Можно предложить:
 
@@ -14,17 +14,8 @@
 	* выбрать цветовую схему, размер окна, шрифтов и т.д.
 	* почитать о кастомизации PS1/применить при желании.
 
-	Несколько популярных проблем:
-	* Добавьте Vagrant в правила исключения перехватывающих трафик для анализа антивирусов, таких как Kaspersky, если у вас возникают связанные с SSL/TLS ошибки,
-	* MobaXterm может конфликтовать с Vagrant в Windows,
-	* Vagrant плохо работает с директориями с кириллицей (может быть вашей домашней директорией), тогда можно либо изменить [VAGRANT_HOME](https://www.vagrantup.com/docs/other/environmental-variables#vagrant_home), либо создать в системе профиль пользователя с английским именем,
-	* VirtualBox конфликтует с Windows Hyper-V и его необходимо [отключить](https://www.vagrantup.com/docs/installation#windows-virtualbox-and-hyper-v),
-	* [WSL2](https://docs.microsoft.com/ru-ru/windows/wsl/wsl2-faq#does-wsl-2-use-hyper-v-will-it-be-available-on-windows-10-home) использует Hyper-V, поэтому с ним VirtualBox также несовместим,
-	* аппаратная виртуализация (Intel VT-x, AMD-V) должна быть активна в BIOS,
-	* в Linux при установке [VirtualBox](https://www.virtualbox.org/wiki/Linux_Downloads) может дополнительно потребоваться пакет `linux-headers-generic` (debian-based) / `kernel-devel` (rhel-based).
-
-[screenshot #2](https://i.imgur.com/F67FxQz.png)
-![screenshot #2](https://i.imgur.com/F67FxQz.png)
+[screenshot #2](https://i.imgur.com/F67FxQz.png)  
+![screenshot #2](https://i.imgur.com/F67FxQz.png)  
 
 1. С помощью базового файла конфигурации запустите Ubuntu 20.04 в VirtualBox посредством Vagrant:
 
@@ -40,33 +31,33 @@
 
     * `vagrant suspend` выключит виртуальную машину с сохранением ее состояния (т.е., при следующем `vagrant up` будут запущены все процессы внутри, которые работали на момент вызова suspend), `vagrant halt` выключит виртуальную машину штатным образом.
 
-[screenshot #3](https://i.imgur.com/BVvse9n.png)
-![screenshot #3](https://i.imgur.com/BVvse9n.png)
+[screenshot #3](https://i.imgur.com/BVvse9n.png)  
+![screenshot #3](https://i.imgur.com/BVvse9n.png)  
 
 1. Ознакомьтесь с графическим интерфейсом VirtualBox, посмотрите как выглядит виртуальная машина, которую создал для вас Vagrant, какие аппаратные ресурсы ей выделены. Какие ресурсы выделены по-умолчанию?
 
-[screenshot #4](https://i.imgur.com/hjjOavA.png)
-![screenshot #4](https://i.imgur.com/hjjOavA.png)
-[screenshot #5](https://i.imgur.com/wUIAXp1.png)
-![screenshot #5](https://i.imgur.com/wUIAXp1.png)
+[screenshot #4](https://i.imgur.com/hjjOavA.png)  
+![screenshot #4](https://i.imgur.com/hjjOavA.png)  
+[screenshot #5](https://i.imgur.com/wUIAXp1.png)  
+![screenshot #5](https://i.imgur.com/wUIAXp1.png)  
 RamSize 1024 MB, Logical CPUs 2, VRamSize 4 MB, vHDD 64 GB  
 
 1. Ознакомьтесь с возможностями конфигурации VirtualBox через Vagrantfile: [документация](https://www.vagrantup.com/docs/providers/virtualbox/configuration.html). Как добавить оперативной памяти или ресурсов процессора виртуальной машине?
 
-[screenshot #6](https://i.imgur.com/4jGXuPD.png)
-![screenshot #6](https://i.imgur.com/4jGXuPD.png)
+[screenshot #6](https://i.imgur.com/4jGXuPD.png)  
+![screenshot #6](https://i.imgur.com/4jGXuPD.png)  
 
 1. Команда `vagrant ssh` из директории, в которой содержится Vagrantfile, позволит вам оказаться внутри виртуальной машины без каких-либо дополнительных настроек. Попрактикуйтесь в выполнении обсуждаемых команд в терминале Ubuntu.
 
-[screenshot #7](https://i.imgur.com/LBNhjCq.png)
-![screenshot #7](https://i.imgur.com/LBNhjCq.png)
+[screenshot #7](https://i.imgur.com/LBNhjCq.png)  
+![screenshot #7](https://i.imgur.com/LBNhjCq.png)  
 
 2. Ознакомиться с разделами `man bash`, почитать о настройках самого bash:
     * какой переменной можно задать длину журнала `history`, и на какой строчке manual это описывается?
     * что делает директива `ignoreboth` в bash?
 
-[screenshot #8](https://i.imgur.com/WgWR7LY.png)
-![screenshot #8](https://i.imgur.com/WgWR7LY.png)
+[screenshot #8](https://i.imgur.com/WgWR7LY.png)  
+![screenshot #8](https://i.imgur.com/WgWR7LY.png)  
 Переменной `HISTSIZE`, на строке 696.  
 
 В переменной bash `HISTCONTROL` значение `ignoreboth` является сокращением, и заменяет два значения `ignorespace` и `ignoredups`.  
@@ -74,16 +65,16 @@ RamSize 1024 MB, Logical CPUs 2, VRamSize 4 MB, vHDD 64 GB
 
 4. В каких сценариях использования применимы скобки `{}` и на какой строчке `man bash` это описано?
 
-[screenshot #9](https://i.imgur.com/Q5N18ve.png)
-![screenshot #9](https://i.imgur.com/Q5N18ve.png)
+[screenshot #9](https://i.imgur.com/Q5N18ve.png)  
+![screenshot #9](https://i.imgur.com/Q5N18ve.png)  
 `{ }` - зарезервированные символы(слова) bash. Строка 147.  
 
-[screenshot #10](https://i.imgur.com/j1H7CHa.png)
-![screenshot #10](https://i.imgur.com/j1H7CHa.png)
+[screenshot #10](https://i.imgur.com/j1H7CHa.png)  
+![screenshot #10](https://i.imgur.com/j1H7CHa.png)  
 Фигурные скобки применяются в составных командах для исполнения в текущей среде bash. Строка 211.  
 
-[screenshot #11](https://i.imgur.com/JGpWwFx.png)
-![screenshot #11](https://i.imgur.com/JGpWwFx.png)
+[screenshot #11](https://i.imgur.com/JGpWwFx.png)  
+![screenshot #11](https://i.imgur.com/JGpWwFx.png)  
 Фигурные скобки применяются для сокращений при перечислении аргументов команд, содержат внутри текстовый список. Строка 869.  
 
 6. С учётом ответа на предыдущий вопрос, как создать однократным вызовом `touch` 100000 файлов? Получится ли аналогичным образом создать 300000? Если нет, то почему?
@@ -121,7 +112,7 @@ RamSize 1024 MB, Logical CPUs 2, VRamSize 4 MB, vHDD 64 GB
 
 12. Завершите работу виртуальной машины чтобы не расходовать ресурсы компьютера и/или батарею ноутбука.
 
-[screenshot #12](https://i.imgur.com/50UsQ0B.png)
-![screenshot #12](https://i.imgur.com/50UsQ0B.png) 
+[screenshot #12](https://i.imgur.com/50UsQ0B.png)  
+![screenshot #12](https://i.imgur.com/50UsQ0B.png)  
 
  ---
