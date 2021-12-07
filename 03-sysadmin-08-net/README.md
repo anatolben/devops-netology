@@ -212,6 +212,6 @@ Paths: (24 available, best #23, table default)
 
 5. Используя diagrams.net, создайте L3 диаграмму вашей домашней сети или любой другой сети, с которой вы работали. 
 
-[Home network diagram](https://app.diagrams.net/?src=about#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fanatolben%2Fdevops-netology%2Fmain%2F03-sysadmin-08-net%2home_nework.drawio)  
+[Home network diagram](https://app.diagrams.net/?src=about#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fanatolben%2Fdevops-netology%2Fmain%2F03-sysadmin-08-net%2Fhome_nework.drawio)  
 
  ---
