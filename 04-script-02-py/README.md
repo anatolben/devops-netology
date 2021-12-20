@@ -122,6 +122,9 @@ $ ./script.py "./"
 #
 
 import os, requests, socket, json
+from requests.exceptions import ConnectTimeout
+from requests.exceptions import ConnectionError
+from contextlib import suppress
 
 urls = ('drive.google.com', 'mail.google.com', 'google.com')
 last_dict = {}
@@ -135,9 +138,6 @@ if os.path.isfile(file_json):
         prev_dict = data['Last'][0]
 for url in urls:
     rt = 0
-    from requests.exceptions import ConnectTimeout
-    from requests.exceptions import ConnectionError
-    from contextlib import suppress
     with suppress(ConnectTimeout):
         with suppress(ConnectionError):
             r = requests.get(prefix+url, verify=True, timeout=request_timeout)
