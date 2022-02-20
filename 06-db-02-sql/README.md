@@ -23,7 +23,7 @@
 Таблица orders:
 - id (serial primary key)
 - наименование (string)
-- цена (integer)****
+- цена (integer)
 
 Таблица clients:
 - id (serial primary key)
