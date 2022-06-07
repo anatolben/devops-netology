@@ -55,4 +55,5 @@
 [main.tf](https://github.com/anatolben/devops-netology/blob/main/07-terraform-04-teamwork/main.tf)  
 [outputs.tf](https://github.com/anatolben/devops-netology/blob/main/07-terraform-04-teamwork/outputs.tf)  
 [versions.tf](https://github.com/anatolben/devops-netology/blob/main/07-terraform-04-teamwork/versions.tf)  
+
 ---
